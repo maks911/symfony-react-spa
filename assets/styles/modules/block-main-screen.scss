@@ -1,0 +1,63 @@
+.main-screen {
+    //background: url('app/uploads/2021/06/main-bg.png') no-repeat 100%  -44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right -55px;
+    padding: 83px 0 160px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 143px;
+
+        @include respond-to('tablet-middle') {
+            flex-direction: column;
+
+        }
+    }
+
+    &__form {
+        position: relative;
+        width: 28%;
+        min-height: 20rem;
+    }
+
+    .title {
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 5rem;
+        line-height: 5.8rem;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    .subtitle {
+        max-width: 457.65px;
+        width: 100%;
+        padding-bottom: 139px;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    &__text {
+        position: relative;
+        z-index: 4;
+    }
+
+}
+
+.buble-little {
+    position: absolute;
+    left: -105%;
+    bottom: -10%;
+}
+
+.buble-big {
+    position: absolute;
+    right: -68%;
+    bottom: -31%;
+    z-index: 2;
+}

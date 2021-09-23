@@ -1,0 +1,177 @@
+.footer {
+    background: $bg-footer;
+    padding: 100px 0 20px;
+    color: $white;
+    text-align: center;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond-to("phablet") {
+            flex-direction: column;
+        }
+    }
+    .nav {
+        max-width: 492px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            a {
+                cursor: pointer;
+            }
+
+            &__link {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $white;
+            }
+
+            &:last-child {
+                border: 1px solid rgba(255, 255, 255, 0.46);
+                box-sizing: border-box;
+                border-radius: 5px;
+                padding: 14px 24px;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 138px;
+
+        @include respond-to("phablet") {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__text {
+        max-width: 329px;
+        width: 100%;
+        //margin-bottom: 75px;
+        text-align: left;
+        @include respond-to("phablet") {
+            margin-bottom: 45px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+
+            &:first-child {
+                margin-bottom: 16px;
+                letter-spacing: 0.015em;
+            }
+
+            a {
+                text-decoration-line: underline;
+                color: #0ABE98;
+            }
+        }
+    }
+
+    //social
+    .social {
+        max-width: 587px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &__item {
+            flex: 20%;
+            display: flex;
+            &__link {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background: #454545;
+                margin-bottom: 20px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__icon {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+
+
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 49px;
+
+        @include respond-to("phablet") {
+            flex-direction: column-reverse;
+        }
+        .list__item__link {
+            margin-right: 20px;
+            color: #656B70;
+        }
+
+        //&__inner {
+        //
+        //}
+
+        &__copyright {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #656B70;
+        }
+
+        //.nav {
+        //    display: flex;
+        //    align-items: center;
+        //    color: #656B70;
+        //
+        //    &__item {
+        //        &__link, a {
+        //            color: #656B70;
+        //            font-size: 14px;
+        //            line-height: 36px;
+        //        }
+        //        &:last-child {
+        //            border: 1px solid #0ABE98;
+        //            box-sizing: border-box;
+        //            border-radius: 5px;
+        //            padding: 14px 24px;
+        //        }
+        //    }
+        //}
+
+        &__smalltext {
+            width: 50%;
+
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                text-align: right;
+                color: rgba(235, 245, 255, 0.5);
+            }
+        }
+    }
+
+    //translate button
+    .wpml-ls-current-language.wpml-ls-menu-item {
+        display: none;
+    }
+}

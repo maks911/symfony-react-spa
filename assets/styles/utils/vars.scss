@@ -1,0 +1,37 @@
+// Colors
+$white: #FFFFFF;
+$black: #282828;
+$text-black: #181C27;
+$main: #4CAE89;
+$pink: #E45D97;
+$background_black: #181C27;
+$grey: #F7F7F7;
+
+
+
+$bg-dark: #202830;
+$bg-light: #F5F5F5;
+$bg-footer: #181927;
+
+
+
+$breakpoints: (
+    "phone" : 320px,
+    "phone-wide" : 480px,
+    "phablet" : 580px,
+    "tablet-small": 640px,
+    "tablet" : 768px,
+    "tablet-middle" : 900px,
+    "tablet-wide" : 1024px,
+    "desktop" : 1200px,
+    "desktop-wide": 1450px,
+    "desktop-big": 1800px,
+    "desktop-huge": 2000px,
+    "desktop-max": 2900px,
+);
+
+$content-size: 1200px;
+$content-size-full: 1420px;
+$content-max-size: 1500px;
+$wrapper-size: 1920px;
+

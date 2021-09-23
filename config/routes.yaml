@@ -1,0 +1,57 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+users_show:
+    path: /users
+    controller: App\Controller\UsersController::index
+contact_page:
+    path: /contact
+    controller: App\Controller\DefaultController::index
+benefits_page:
+    path: /benefits
+    controller: App\Controller\ContentController::index
+features_page:
+    path: /features
+    controller: App\Controller\ContentController::index
+proxy_page:
+    path: /proxy
+    controller: App\Controller\ContentController::index
+top_page:
+    path: /top
+    controller: App\Controller\ContentController::index
+get_menu:
+    path: /api/menu/
+    controller: App\Controller\DefaultController::getMenu
+    methods:    GET|HEAD
+api_post_show:
+    path:       /api/users/
+    controller: App\Controller\UsersController::getUsers
+    methods:    GET|HEAD
+api_langs_show:
+    path:       /api/langs/
+    controller: App\Controller\LangsController::getLangs
+    methods:    GET|HEAD
+api_top_screen:
+    path:       /api/top/
+    controller: App\Controller\ContentController::getTopScreen
+    methods:    GET|HEAD
+api_benefits:
+    path:       /api/benefits/
+    controller: App\Controller\ContentController::getBenefits
+    methods:    GET|HEAD
+api_features:
+    path:       /api/features/
+    controller: App\Controller\ContentController::getFeatures
+    methods:    GET|HEAD
+api_title:
+    path:       /api/title/
+    controller: App\Controller\ContentController::getTitle
+    methods:    GET|HEAD
+api_proxy:
+    path:       /api/proxy/
+    controller: App\Controller\ContentController::getProxy
+    methods:    GET|HEAD
+login:
+    path:       /login
+    controller: App\Controller\SecurityController::login
+    methods: GET|POST

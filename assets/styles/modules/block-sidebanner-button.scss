@@ -1,0 +1,196 @@
+.sidebanner-button {
+    background: #181927;
+    color: $white;
+    text-align: center;
+    padding: 124px 0;
+
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond-to("tablet-middle") {
+            flex-wrap: wrap;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 4.2rem;
+            line-height: 5rem;
+            margin-bottom: 30px;
+            text-align: left;
+
+            p {
+                strong {
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .description {
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: #B0B2B7;
+            margin-bottom: 38px;
+            text-align: left;
+        }
+
+        .list {
+            max-width: 732px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &_el {
+                flex: 100%;
+                margin: 13px 15px;
+                text-align: left;
+
+                &_description {
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #141414;
+                    position: relative;
+                    //text-align: left;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -17PX;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #21C5A2;
+                    }
+                }
+            }
+        }
+
+        .col {
+            &:first-child {
+                width: 100%;
+                max-width: 519px;
+                margin: auto;
+            }
+        }
+
+        .banner_left {
+            width: 60%;
+            order: -1;
+            margin-right: 26px;
+
+            img {
+                width: 100%;
+            }
+
+            @include respond-to("tablet-middle") {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        .banner_right {
+            width: 53%;
+            margin-left: 26px;
+
+            img {
+                width: 100%;
+            }
+
+            @include respond-to("tablet-middle") {
+                width: 100%;
+                order: -1;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        font-weight: bold;
+        color: #383838;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        transition: all .3ms ease;
+
+        &:hover {
+            .button-icon {
+                margin-left: 15px;
+            }
+        }
+
+        &-icon {
+            margin-left: 10px;
+        }
+    }
+
+    //Prime_of_Prime
+    &.Prime {
+        .inner {
+            .title {
+                color: #141414;
+            }
+            .description {
+                color: #707070;
+            }
+        }
+    }
+    //Branding
+    &.Branding {
+        .inner {
+            .title {
+                color: #141414;
+            }
+            .description {
+                color: #707070;
+            }
+        }
+        .col:first-child {
+            text-align: left;
+        }
+        .button {
+            display: flex;
+            font-weight: bold;
+            color: #383838;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+    }
+    //Proxy
+    &.Proxy {
+        text-align: left;
+        .inner {
+            .col:first-child {
+                max-width: 486px;
+            }
+            .title {
+                text-align: left;
+            }
+            .banner_right {
+                margin-left: 0;
+                max-width: 623px;
+
+                img {
+                    width: 115.5%;
+                }
+            }
+        }
+
+        .button {
+            color: #fff;
+            &-icon {
+                svg path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+
+}

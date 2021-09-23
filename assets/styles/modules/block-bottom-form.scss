@@ -1,0 +1,185 @@
+.bottom-form {
+    background: #F6F6F6;
+    padding: 110px 0 130px;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include respond-to("tablet") {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .col {
+        width: 50%;
+
+        @include respond-to("middle") {
+            width: 100%;
+        }
+
+        &:first-child {
+            //margin-top: 20px;
+            max-widssth: 277px;
+            width: 30%;
+
+            @include respond-to("tablet") {
+                width: 100%;
+            }
+        }
+
+        &:last-child {
+            max-width: 623px;
+            width: 60%;
+            @include respond-to("tablet") {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+        color: #141414;
+
+        strong {
+            font-weight: 900;
+        }
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        color: #707070;
+        margin-top: 10px;
+    }
+
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 623px;
+        width: 100%;
+
+        label {
+            width: 47%;
+            display: flex;
+            position: relative;
+
+            @include respond-to("phablet") {
+                width: 100%;
+            }
+        }
+
+        .buty__placeholder {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            transition: .5s;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(29, 31, 48, 0.5);
+            border-color: #d4d4d4;
+        }
+
+        .buty__input {
+            background: 0 0;
+            height: 44px;
+            width: 100%;
+            display: block;
+            border: none;
+            color: rgba(29, 31, 48, .9);
+            //border-bottom: 1px solid #828282;
+            padding: 10px 0 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .buty__label {
+            margin-top: 8px;
+            border-top:  0;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 1px solid rgba(209,219,226,.7);
+            &.buty__label__pich, &.buty__label__phone {
+                width: 47%;
+                @include respond-to("phone-wide") {
+                    width: 100%;
+                }
+            }
+            &.buty__label__phone {
+                &.phone_verify-code,
+                &.phone_verify-phone {
+                    width: 100%;
+                }
+            }
+
+
+            //& + .buty__label {
+            //    margin-top: 20px;
+            //}
+
+            img {
+                min-height: 37px;
+                display: block;
+                width: 131px;
+                margin-right: 11px;
+                flex-shrink: 0;
+            }
+
+            span {
+                width: 100%;
+            }
+        }
+
+        .intl-tel-input {
+            position: relative;
+            display: inline-flex;
+        }
+
+        .buty__police {
+            width: 100%;
+            margin-top: 25px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 15px;
+            color: #707070;
+
+            a {
+                color: #707070;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+        }
+
+        .buty__btn {
+            width: 100%;
+            //margin-top: 25px;
+            margin-bottom: 0;
+            //background: linear-gradient(90deg, #136A8A 0%, #267871 100%), linear-gradient(270deg, #82909F -4.16%, #9FA9B5 100.04%);
+            background: #0ABE98;
+            border-radius: 3px;
+            padding: 0;
+            border: none;
+            height: 59px;
+            transition: all .5s;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

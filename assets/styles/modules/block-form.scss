@@ -1,0 +1,411 @@
+.main-screen form, .bottom-form form {
+    .buty__label {
+
+        .buty__placeholder {
+            transition: all .3s ease-in;
+        }
+
+        &.active {
+            .buty__placeholder {
+                top: 4px;
+                font-size: 10px;
+            }
+        }
+
+        &__pich {
+
+            .buty__placeholder {
+                margin-left: 40%;
+
+                @include respond-to("phone-wide") {
+                    margin-left: 33%;
+                }
+            }
+        }
+    }
+}
+.main-screen form {
+    //.buty__input {
+    //    border-bottom: .8px solid #fff;
+    //}
+    .buty__police {
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+}
+.bottom-form form {
+    .buty__label {
+        &__pich {
+
+            .buty__placeholder {
+                margin-left: 55%;
+                @include respond-to("phone-wide") {
+                    margin-left: 33%;
+                }
+            }
+        }
+    }
+}
+
+
+//form all
+.wpcf7-form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+
+    .wpcf7-text {
+        background-color: transparent;
+        border: 0;
+        //border-bottom: 0.8px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .wpcf7-submit {
+        width: 364px;
+        height: 59px;
+        background: linear-gradient(90deg, #319BC2 0%, #21AEA2 100%), linear-gradient(270deg, #82909F -4.16%, #9FA9B5 100.04%);
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(270deg, #319bc2 0, #21aea2 100%), linear-gradient(270deg, #82909f -4.16%, #9fa9b5 100.04%);
+        }
+    }
+    .wpcf7-response-output {
+        position: absolute;
+        top: -50px;
+        right: 0;
+    }
+}
+.wpcf7-captchar {
+    .buty__input {
+        border: none;
+    }
+}
+
+form {
+    max-width: 341px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    label {
+        display: flex;
+        position: relative;
+    }
+
+    .buty__placeholder {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        transition: .5s;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 0.6);
+        border-color: rgba(255, 255, 255, 0.6);
+        padding-left: 23px;
+    }
+
+    .buty__input {
+        width: 100%;
+        height: 53px;
+        display: block;
+        border: none;
+        //border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        padding: 10px 0 0 23px;
+        margin: 0;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+    }
+
+    .buty__label {
+        width: 100%;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(209, 219, 226, 0.7);
+        border-radius: 5px;
+        @include respond-to("tablet-middle") {
+            width: 100%;
+        }
+
+        &__phone {
+            .buty__placeholder {
+                padding-left: 50px;
+            }
+            .buty__btn {
+                margin-top: 0;
+            }
+
+        }
+
+        & + .buty__label {
+            margin-top: 8px;
+        }
+
+        img {
+            min-height: 51px;
+            display: block;
+            width: 131px;
+            margin-right: 11px;
+            flex-shrink: 0;
+        }
+
+        span {
+            width: 100%;
+        }
+    }
+
+    .phone {
+        &_verify {
+            &-phone {
+                display: flex;
+                flex-direction: column-reverse;
+                border: none;
+
+                .buty__btn {
+                    border: 1px solid rgba(209,219,226,.7);
+                    border-radius: 5px;
+                }
+            }
+            &-code {
+
+            }
+        }
+    }
+
+    #mo_message{
+        padding:12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+
+        img {
+            max-width: 35px;
+        }
+    }
+
+    .intl-tel-input {
+        position: relative;
+        display: inline-flex;
+    }
+
+    .buty__police {
+        order: 6;
+        width: 100%;
+        margin-top: 8px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 15px;
+        color: $white;
+
+        a {
+            text-decoration-line: underline;
+            cursor: pointer;
+            color: $white;
+        }
+    }
+
+    .buty__btn {
+        width: 100%;
+        order: 5;
+        //margin-top: 25px;
+        margin-top: 8px;
+        background: #0ABE98;
+        border-radius: 5px;
+        padding: 0;
+        border: none;
+        height: 59px;
+        transition: all .5s;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.phone_verify-phone,
+phone_verify-code {
+    display: none;
+}
+
+
+
+
+//popup
+.popup-show {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #F6F6F6;
+}
+
+.popup {
+    display: none;
+    &.show {
+        background: #F6F6F6;
+        max-width: 1039px;
+        width: 100%;
+        max-height: 642px;
+        height: 100%;
+        margin: auto;
+        z-index: 15;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 50%;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__inner {
+        max-width: 443px;
+        width: 100%;
+        margin: auto;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+        //text-align: center;
+        color: #242424;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #76828B;
+        margin-bottom: 49px;
+    }
+
+    .buty__label__phone {
+        &.verify_code {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            position: relative;
+            display: flex;
+
+            &.active {
+                .buty__placeholder {
+                    top: 0;
+                }
+            }
+
+
+            .phone_verify {
+                width: 100%;
+                .buty__input {
+                    //border: none;
+                    color: rgba(29, 31, 48, 0.5);
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+                    border: 1px solid #828282;
+                }
+            }
+        }
+    }
+    .buty {
+
+        &__label {
+            //&.active {
+            //  .buty__placeholder {
+            //    top: 4px;
+            //    font-size: 12px;
+            //  }
+            //}
+            //  width: 100%;
+            //  margin-top: 20px;
+            //  background: rgba(255, 255, 255, 0.1);
+            //  border: 1px solid rgba(209, 219, 226, 0.7);
+            //  border-radius: 5px;
+        }
+        &__placeholder {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            transition: .5s;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            //color: rgba(255, 255, 255, 0.6);
+            color: red;
+            border-color: rgba(255, 255, 255, 0.6);
+            padding-left: 23px;
+        }
+        &__input {
+            background: 0 0;
+            height: 53px;
+            width: 100%;
+            display: block;
+            border: none;
+            //border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            padding: 10px 0 0 23px;
+            margin: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            //color: #fff;
+            color: red;
+        }
+    }
+    .verify_phone {
+        margin: 8px 0;
+        .buty__btn.button.alt {
+            background: #0ABE98;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            text-transform: capitalize;
+            width: 100%;
+            height: 52px;
+            color: #fff;
+            border: none;
+        }
+    }
+    .buty__police {
+        font-size: 11px;
+        line-height: 15px;
+        color: #A1A1A1;
+        a {
+            font-size: 11px;
+            line-height: 15px;
+            color: #A1A1A1;
+            text-decoration-line: underline;
+        }
+    }
+}
+
+
+
+.buty__label.phone_verify-code, .buty__police, .send-btn {
+    display: none;
+}

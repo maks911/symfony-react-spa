@@ -1,0 +1,21 @@
+.wp-block {
+    max-width: 100% !important;
+}
+
+.acf-block-preview {
+    border: 2px solid;
+    min-height: 50px !important;
+    background: #fef8ee;
+
+    input {
+        background-color: transparent;
+    }
+
+    select {
+        background-color: transparent;
+    }
+
+    textarea {
+        background-color: transparent;
+    }
+}

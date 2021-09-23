@@ -1,0 +1,155 @@
+.benefits {
+    text-align: left;
+
+    .title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+        margin-bottom: 80px;
+        color: #141414;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        &_el {
+            //flex: 1 0 20%;
+            margin: 18px;
+            //min-width: 200px;
+
+            //&_icon {
+            //    background: #F5F5F5;
+            //    border-radius: 50%;
+            //    margin-bottom: 24px;
+            //}
+
+            &_title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: #141414;
+                margin-bottom: 20px;
+                letter-spacing: 0.015em;
+            }
+            //
+            //&_description {
+            //    font-size: 14px;
+            //    line-height: 22px;
+            //    color: #434C56;
+            //}
+        }
+    }
+
+    //section
+    &.pink {
+        padding: 150px 0;
+        background: #fff;
+
+        .title {
+            //font-weight: 300;
+            //font-size: 4.2rem;
+            //line-height: 5.5rem;
+            //letter-spacing: -0.5px;
+            //color: #383838;
+            //margin-bottom: 60px;
+
+            strong {
+                font-weight: 900;
+                letter-spacing: 1px;
+            }
+        }
+
+        .list {
+            &_el {
+                flex: 47%;
+                //max-width: 480px;
+                //width: 50%;
+                margin: 10px;
+                padding: 48px 40px 48px 48px;
+                text-align: left;
+                border: 1px solid #E3E3E3;
+                display: flex;
+                align-items: flex-start;
+
+                @include respond-to("tablet") {
+                    flex: 100%;
+                }
+
+                &_inner {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    max-width: 301px;
+                    width: 100%;
+                    margin-left: 20px;
+                }
+                &_icon {
+                    margin: 0;
+                }
+                &_descr {
+                    max-width: 301px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+
+    //section
+    &.white {
+        padding: 180px 0 115px;
+
+        .title {
+            font-weight: 900;
+            font-size: 5.7rem;
+            line-height: 6rem;
+            color: #383838;
+        }
+        .list {
+            &_el {
+                flex: 30%;
+                margin: 0;
+                //padding: 0 126px 75px 0;
+                text-align: left;
+
+                @include respond-to("phablet") {
+                    flex: 50%;
+                    padding: 5px;
+
+                }
+
+                &_title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.015em;
+                    color: #383838;
+                    margin-bottom: 15px;
+                }
+                &_description {
+                    max-width: 260px;
+                    width: 100%;
+                    margin-right: auto;
+                    margin-bottom: 75px;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #A1A1A1;
+                }
+                &_inner {
+                    max-width: 260px;
+                    width: 100%;
+                    margin-right: auto;
+                    margin-bottom: 75px;
+                }
+
+            }
+        }
+    }
+}

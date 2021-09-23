@@ -1,0 +1,52 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-size: 14px;
+    color: #000;
+    font-family: 'Roboto';
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    background: $white;
+    z-index: 0;
+
+    @include respond-to('tablet-middle') {
+        font-size: 13px;
+    }
+    @include respond-to('tablet') {
+        font-size: 12px;
+    }
+    @include respond-to('tablet-small') {
+        font-size: 11px;
+    }
+    @include respond-to('phablet') {
+        font-size: 10px;
+    }
+    @include respond-to('phone-wide') {
+        font-size: 9px;
+    }
+    @include respond-to('phone') {
+        font-size: 8px;
+    }
+}
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+//Модули
+@import "modules/modules";
