@@ -18,6 +18,7 @@ class MetaCrudController extends AbstractCrudController
         return [          
              TextField::new('page_id'),
              TextField::new('metakey'),
+             TextField::new('metatype'),
              TextEditorField::new('metavalue')
         ];
     }
