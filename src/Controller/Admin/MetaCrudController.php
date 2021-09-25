@@ -12,14 +12,14 @@ class MetaCrudController extends AbstractCrudController
         return Meta::class;
     }
 
-    /*
+    
     public function configureFields(string $pageName): iterable
     {
-        return [
-            IdField::new('id'),
-            TextField::new('title'),
-            TextEditorField::new('description'),
+        return [          
+             TextField::new('page_id'),
+             TextField::new('metakey'),
+             TextEditorField::new('metavalue')
         ];
     }
-    */
+    
 }
